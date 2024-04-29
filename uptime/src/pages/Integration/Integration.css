@@ -1,0 +1,151 @@
+.integration{
+  max-width: 100%;
+  top: 4.8vw;
+  position: relative;
+
+}
+.integration .banner{
+    background: #131A26;
+    color: #fff;
+    height: 30vw;
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    /* position: absolute; */
+    position: relative;
+    width: 100%;
+}
+.integration .banner h1{
+    font-size: 3.5vw;
+    line-height: 4vw;
+}
+.integration .banner p{
+    font-size: 1.3vw;
+    margin-top: 3vw;
+}
+.personal-channels{
+    text-align: center;
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    
+}
+.personal-channels h1{
+    margin-bottom: 2vw;
+
+}
+.personal-channels .integration-footer h1{
+    margin-bottom: 1vw;
+}
+.card-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2vw;
+}
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* Responsive grid layout with minimum width of 200px */
+    gap: 20px; /* Gap between cards */
+    width: 80%;
+    
+  }
+  
+  .card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for each card */
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+
+  }
+  .card img{
+    width: 80px;
+    height: 80px;
+  }
+  .card p{
+    font-weight: 800;
+  }
+  .card .card-desc{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    padding: 1vw;
+    display: none;
+    /* background: #fff; */
+    backdrop-filter: blur(15px);
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 10px;
+    animation: fadeInOnly 0.5s;
+  
+  }
+  .card:hover .card-desc{
+    display: block;
+  }
+  
+  
+  .card h2 {
+    margin-top: 10px; /* Spacing between icon and heading */
+  }
+  
+  .card-icon {
+    font-size: 2rem; /* Adjust the size of the icon */
+  }
+  
+  .integration-footer{
+    margin-top: 4vw;
+  }
+  .integration-footer .download-container img{
+    width: 100px;
+    height: 30px;
+  }
+  .integration-footer .download-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+  }
+
+ 
+  .luminous-circle {
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgba(17, 238, 65, 0.5);
+    background: url('https://server.blix.gg/imgproxy/1Wv1e9r147Ch1Hnr64AoH-JA_s_Ezw7gTXAGooQQq2Y/rs:fit:260:260:0/g:no/aHR0cHM6Ly9zdGF0aWMud2lraWEubm9jb29raWUubmV0L2NsYXNob2ZjbGFucy9pbWFnZXMvYy9jYi9DaGFtcGlvbl9XYXJkZW5fM0RfcHJldmlldy5wbmc.webp');
+    width: 100px;
+    background-size: cover;
+    background-position: center;
+    height: 100px;
+    pointer-events: none; /* Ensures the circle doesn't interfere with mouse events */
+    transform: translate(-50%, -50%);
+    animation: shadow 0.7s infinite alternate;
+    transition: width 0.2s, height 0.2s, opacity 0.2s;
+    opacity: 1;
+    z-index: 999;
+  }
+  
+  /* Add a class to make the circle glow */
+  .luminous-circle.glow {
+    box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.7);
+  }
+
+  @media (max-width: 900px){
+
+    .integration .banner h1{
+      line-height: 6vw;
+      font-size: 5.5vw;
+    }
+
+    .card .card-desc {
+      padding: 12vw;
+    }
+  }

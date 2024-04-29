@@ -1,0 +1,159 @@
+.pricing {
+  background-color: #131A26;
+}
+
+.pricing-container {
+  display: flex;
+  gap: 1.5vw;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin-top: 3vw;
+}
+
+.pricing-card {
+  width: 25%;
+  height: 70%;
+  padding: 1vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* text-align: center; */
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  background-color: white;
+  /* Set background color to white */
+}
+
+.pricing-card p {
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+  font-size: 20px;
+}
+
+.pricing-card ul {
+  margin-bottom: 2vw;
+  position: relative;
+}
+
+.pricing-card li {
+  list-style: none;
+}
+
+.pricing-card .flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pricing-card h2 {
+  margin-top: 0;
+  font-size: 30px;
+}
+
+.pricing-card span {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background: #000;
+  color: #fff;
+  border-radius: 5px;
+  width: 100%;
+  text-align: center;
+}
+
+.pricing-card p {
+  font-weight: 600;
+}
+
+.btn {
+  font-size: 14px;
+  padding: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 10px;
+  width: 40%;
+  background-color: rgb(43, 163, 43);
+  color: #fff;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+}
+
+.pricing-card ul .pricing-circle {
+  position: absolute;
+  top: 50px;
+  left: 105px;
+  border-radius: 50%;
+  background-color: rgba(17, 238, 65, 0.5);
+  width: 120px;
+  height: 120px;
+  pointer-events: none;
+  /* Ensures the circle doesn't interfere with mouse events */
+  transform: translate(-50%, -50%);
+  animation: shadow 0.7s infinite alternate;
+  transition: width 0.2s, height 0.2s, opacity 0.2s;
+  opacity: .7;
+}
+
+.btn-container{
+  position: absolute;
+  top: 6vw;
+  left: 50%;
+  transform: translate(-50%,0);
+
+}
+.green-bg{
+  background-color: #2BA32B;
+  color: #fff;
+}
+.btn-container button{
+  border-radius: 0;
+  font-size: 10px;
+  padding: 8px;
+  padding-left: 12px;
+  padding-right: 12px;
+  border: 0;
+  outline: 0; 
+  cursor: pointer;
+  font-weight: 600;
+}
+
+@media (max-width:1200px){
+  .btn-container{
+    margin-top: 2vw;
+  }
+}
+
+@media (max-width:990px) {
+  .pricing-container {
+    flex-direction: column;
+    height: auto;
+    padding-top: 20vh;
+  }
+
+  .pricing-card {
+    width: 80%;
+    margin-bottom: 30px;
+  }
+
+  .btn {
+    margin-bottom: 20px;
+  }
+
+  .pricing-card ul .pricing-circle {
+    width: 100px;
+    height: 100px;
+  }
+  .btn-container{
+    margin-top: 5vw;
+  }
+}
+@media (max-width:600px){
+  .btn-container{
+    margin-top: 15vw;
+  }
+}

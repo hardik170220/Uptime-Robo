@@ -1,0 +1,160 @@
+.HomePage {
+    background-color: #131A26;
+    color: white;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    max-width: 100%;
+    padding: 2rem;
+    gap: 2rem;
+    animation: fadeInOnly 3s;
+    
+  }
+  
+  .image-section {
+    margin-bottom: 20px;
+    position: relative;
+   
+  }
+
+  .image-section img { 
+    position: relative;
+    height: 100%;
+    z-index: 9;
+    width: auto;
+   
+  }
+  .image-section::after {
+    content: "";
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background:#161F2D ;
+    position: absolute;
+    left: 40px; /* Adjust this value to position the circle */
+    top: 15% ;/* Center the circle vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: .3;
+    box-shadow: 0 0 10px 5px rgba(0, 255, 0, 0.5);
+    animation: shadow 0.8s alternate infinite;
+  }
+
+ 
+  
+  .text-section {
+    /* text-align: center; */
+    flex-basis: 50%;
+    margin-top: 10vw;
+    line-height: 4vw;
+    
+  }
+  .text-section h1{
+    font-size: 4vw;
+    
+  }
+  .text-section p{
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .green-font{
+    color: #3BD771;
+    
+    
+  } 
+  .logohome {
+    background: #3BD771;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    /* box-shadow: 0 0 10px 5px rgba(0, 255, 0, 0.5); */
+    animation: shadow1 0.7s infinite alternate;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: -.5vw;
+    
+  }
+  .innerlogohome {
+    background: #131A26;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    /* box-shadow: 0 0 10px 5px rgba(0, 255, 0, 0.5); */
+    /* animation: shadow1 0.7s infinite alternate; */
+    display: inline-block;
+  }
+ 
+ 
+  .text-section p {
+    margin-top: 1vw;
+  }
+   .text-section button {
+    padding: 1vw 2vw;
+    font-size: 1.6vw;
+    background-color: #3BD771;
+    color: #fff;
+    border: none;
+    border-radius: 2vw;
+    cursor: pointer;
+    margin-top: 2rem;
+    font-weight: 600;
+    width: 30vw;
+    
+
+  }
+/* .cursor{
+  
+    background: #3BD771;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 5px rgba(0, 255, 0, 0.5);
+   
+    position: fixed;
+  
+    
+  
+} */
+
+
+
+  @media (max-width: 900px) {
+    .image-section img {
+      max-width: 80%; /* Adjust the maximum width for mobile */
+      
+    }
+    .image-section{
+      display: none;
+      
+    }
+    .text-section{
+      padding-top:10vw ;
+      line-height: 8vw;
+      flex-basis: 95%;
+    }
+    .text-section h1{
+     font-size: 8vw;
+     line-height: normal;
+    }
+    .text-section p{
+      line-height: normal;
+    }
+    .logohome{
+      
+      width: 5vw;
+      height: 5vw;
+    }
+    .innerlogohome{
+      
+      width: 3vw;
+      height: 3vw;
+    }
+    .text-section button{
+      padding: 2vw 2vw;
+      border-radius: 3vw;
+    }
+  }
+  

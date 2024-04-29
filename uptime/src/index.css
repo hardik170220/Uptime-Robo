@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    /* background: #131A26; */
+}
+
+/* .fade-in {
+    opacity: 0; 
+    animation: fadeIn 0.5s ease-in forwards; 
+  } */
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+       scale: 0; /* Start opacity */
+    }
+    to {
+      opacity: 1;
+      /* End opacity */
+       scale: 1 ;
+    }
+  }
+  @keyframes fadeInOnly {
+    from {
+      opacity: 0;
+       
+    }
+    to {
+      opacity: 1;
+      /* End opacity */
+       
+    }
+  }
+  @keyframes tilt {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(-5deg);
+      scale: 1.1;
+    }
+  }
+
+  @keyframes shadow {
+    to {
+      box-shadow: 0 0 10px 5px rgba(0, 255, 0, 0.5);
+    }
+    from {
+      box-shadow: 0 0 10px 5px rgba(0, 255, 0, 0.479) ;
+      scale: 1.05;
+    }
+  }
+  @keyframes shadow1 {
+    to {
+      box-shadow: 0 0 10px 5px rgba(0, 255, 0, 0.5);
+    
+    }
+    from {
+      box-shadow: 0 0 10px 5px rgb(0, 255, 0) ;
+     
+      
+    }
+  }
+  
+   @keyframes tilt {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(-5deg);
+      scale: 1.1;
+    }
+  }

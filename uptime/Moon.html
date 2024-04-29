@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Moon Circle</title>
+<style>
+  .moon {
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle, #c4c1c1 10%, #8d8b8b 90%);
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+  }
+  .moon::before {
+    content: "";
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+    background: radial-gradient(circle, #ffffff 0%, #9c9a9a 50%);
+    border-radius: 50%;
+    opacity: .5;
+  }
+</style>
+</head>
+<body>
+
+<div class="moon"></div>
+
+</body>
+</html>

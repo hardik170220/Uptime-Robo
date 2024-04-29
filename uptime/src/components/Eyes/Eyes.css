@@ -1,0 +1,65 @@
+.eyes{
+   
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* .eyes .image-container{
+ background: url('https://ochi.design/wp-content/uploads/2022/05/Top-Viewbbcbv-1-scaled.jpg');
+ height: 80%;
+ background-size: cover;
+ background-position: center;
+ width: 70%;
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%,-50%);
+ 
+ 
+} */
+.eyes .eye-container{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+   
+}
+.eyes .eye{
+    width:8vw ;
+    height: 8vw;
+    border-radius: 50%;
+    background-color: aliceblue;
+    transform: translate(-50%,-50%);
+    position: relative;
+    
+}
+.eye .inner-eye{
+    width: 65%;
+    height: 65%;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+.inner-eye .line{
+    width: 100%;
+    height: 10%;
+    /* background-color: rgb(255, 255, 255); */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+
+}
+.line .eyedot{
+    width: 2vw;
+    height: 2vw;
+    border-radius: 50%;
+    background-color: white;
+    
+}
